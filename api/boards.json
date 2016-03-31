@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Goals" 
+        },
+        {
+            "id": 2,
+            "name": "Up Next"
+        }, 
+        {
+            "id": 3,
+            "name": "Planning"
+        },
+        {
+            "id": 4,
+            "name": "Underway"
+        },
+        {
+            "id": 5,
+            "name": "Done"
+        }
+    ]
+}

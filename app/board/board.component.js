@@ -1,4 +1,4 @@
-System.register(['angular2/core', './board/board.component'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,32 +10,29 @@ System.register(['angular2/core', './board/board.component'], function(exports_1
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, board_component_1;
-    var AppComponent;
+    var core_1;
+    var BoardComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (board_component_1_1) {
-                board_component_1 = board_component_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            BoardComponent = (function () {
+                function BoardComponent() {
                 }
-                AppComponent = __decorate([
+                BoardComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-app',
-                        template: '<h1>My First Angular App</h1><trello-board></trello-board>',
-                        directives: [board_component_1.BoardComponent]
+                        selector: 'trello-board',
+                        templateUrl: 'app/board/board.component.html',
+                        styleUrls: ['app/board/board.component.css']
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], BoardComponent);
+                return BoardComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("BoardComponent", BoardComponent);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=board.component.js.map
